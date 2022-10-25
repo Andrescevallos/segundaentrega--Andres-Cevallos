@@ -6,6 +6,9 @@
 body{
     background-color: rgb(37, 176, 222);
     background-image: url(../img/fondo/st\,small\,507x507-pad\,600x600\,f8f8f8.png);
+    background-repeat: no-repeat ;
+    background-position: center center;
+    background-attachment: fixed;
 
 
 }
@@ -27,6 +30,7 @@ header{
     background-size: cover;
     height: 500px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .letrasmenu{
@@ -37,6 +41,7 @@ header{
     justify-items: baseline;
     justify-content: space-evenly;
 }
+
 h1{
     font-size: 70px;
     color: rgb(37, 176, 222);
@@ -44,7 +49,7 @@ h1{
 }
 
 h2, h3{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 
@@ -91,6 +96,8 @@ header div nav div ul li{
 
 .titulos{
     text-align: center;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .efectotitulos{
@@ -104,30 +111,9 @@ header div nav div ul li{
     color: white;
 }
 
-.efectotitulos:hover{
-    animation: cambiodecolor 1s;
-}
 
 .flexmenu li{
     border-radius: 20%;
-}
-
-@keyframes cambiodecolor {
-    10%{
-        background-color: #339DC5;
-    }
-    20%{
-        background-color: #000000;
-    }
-    20%{
-        background-color: #339DC5;
-    }
-    20%{
-        background-color: #000000;
-    }
-    20%{
-        background-color: #339DC5;
-    }
 }
 
 .titpri{
@@ -171,7 +157,7 @@ main section  :nth-child(8){
 }
 
 .colornegro{
-    background-color: rgb(73, 71, 71);
+    background-image: linear-gradient(to left, rgb(54, 154, 226), rgb(0, 0, 0), rgb(54, 154, 226),  rgb(0, 0, 0)) ;
     color: white;
     margin: 0 0 0 0;
 }
@@ -204,6 +190,10 @@ footer div a img{
     flex-direction: column;
     align-items: flex-end;
     z-index: 100;
+}
+
+.redes li a{
+    text-decoration: none;
 }
 
 .fa-brands{
@@ -257,6 +247,34 @@ footer div a img{
 
 }
 
+@media screen and (max-width: 480px)  {
+    .section1{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border: black;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+
+    background: linear-gradient(
+        45deg,
+        #22a1db,
+        #040a0d,
+        #22a1db     
+    );
+    border-radius: 5px;
+    
+}
 /*--------------page 2 -----------------------*/
 
 .main2{
@@ -268,6 +286,7 @@ footer div a img{
 
 .main2 div ul{
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .divmain2{
@@ -279,6 +298,7 @@ footer div a img{
 .divmain2 div{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .separador2{
     margin: 0 30px
@@ -363,7 +383,7 @@ h6{
     display: flex;    
     justify-content: space-around;
 
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .section2 div{
@@ -375,6 +395,30 @@ h6{
     width: 250px;
     height: 250px;
 }
+
+.parte1, .parte2, .parte3, .parte4, .parte5, .parte6{
+    position: absolute;
+}
+
+.parte1, .parte3, .parte5{
+    transition: all 0.5s;
+}
+
+.parte1:hover, .parte3:hover, .parte5:hover{
+    transform: translate(75px, 75px);
+}
+
+.titulopage2{
+    margin-bottom: 70px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.titulomenciones{
+    margin-bottom: 150px;
+    font-size: x-large;
+}
+
 
 /*--------------page 3 -----------------------*/
 
@@ -408,7 +452,7 @@ h6{
 
 .forma4{
     width: 250px;
-    height: 250px;
+    height: 200px;
 }
 .divfotos{
     display: grid;
@@ -477,9 +521,32 @@ h6{
     height: 100%;
     margin-bottom: 50px;
 }
+
 .espacio4, .fotopri{
     margin-bottom: 30px;
 }
+
+.analisisp4 p{
+    margin: 0 30px 0 30px;
+}
+
+.divfotos .espacio4:hover{
+    transform:scale(2.0);
+    transition: all 0.5s;
+    border: #000000 solid;
+    background-image: linear-gradient(to left, rgb(54, 154, 226), rgb(0, 0, 0)) ;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .divfotos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
 /*--------------page 5 -----------------------*/
 
 .alberdi{
@@ -496,11 +563,37 @@ h6{
 .section5{
     display: flex;
     flex-direction: column;
-
-
 }
 .prim5{
     margin-bottom: 100px;
 
 }
 
+.separador5{
+    margin-bottom: 40px;
+}
+
+.cultu{
+    flex-direction: column;
+}
+
+.cultulink{
+    transition: 0.5s;
+}
+
+.cultulink li a:hover{
+    transform: scale(2.0);
+}
+
+.cultulink li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.cultulink li{
+    list-style: none;
+    width: 150px;
+    height:100px ;
+    border: #000000 solid;
+
+}
