@@ -594,6 +594,10 @@ h6{
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .divmain2{
+        
+    }
     
     .linea{
         visibility: hidden;
