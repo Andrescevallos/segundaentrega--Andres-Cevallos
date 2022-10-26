@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cfb90e9f6b.js" crossorigin="anonymous"></script>
     <title>Alberdi</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <link rel="stylesheet" href="../css/style.css">
 
@@ -38,12 +40,16 @@
                 <h2 class="titulos">Alberdi</h2>
                 <section class="section5">
                     <div class="prim5">
-                        <iframe class="mapa5"
+                        <div data-aos="fade-right">
+                            <iframe class="mapa5"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13620.784753786478!2d-64.21008512186535!3d-31.408720338906118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298840792ab2b%3A0xce35544b2ebb1d7c!2sAlberdi%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1664807796597!5m2!1ses!2sar"
                             width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <img src="../img/alberdi.jpg" class="alberdi"
-                            alt="Imagen tomada de un dron al barrio de alberdi">
+                        </div>
+                        <div data-aos="fade-left">
+                            <img src="../img/alberdi.jpg" class="alberdi" alt="Imagen tomada de un dron al barrio de alberdi">
+                        </div>
+                        
 
                     </div>
                     <div class="separador5">
@@ -143,6 +149,12 @@
 
 
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 
 </html>
