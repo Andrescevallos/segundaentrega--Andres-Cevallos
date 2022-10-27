@@ -585,7 +585,7 @@ h6{
 
 }
 
-/*------celular------*/
+/*------celular para paginas 1 y 2------*/
 
 @media screen and (max-width: 580px) {
     .divmain2, .separador2, .main2, .section2, .efecto4, .divfoo ,.colornegro, .section1, .divfechas, .parraf1-celu, .fechas {
