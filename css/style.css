@@ -503,8 +503,7 @@ h6{
     margin-bottom: 50px;
 }
 
-.analisisp4{
-    border: #000000 solid;
+.analisisp4{    
     height: 100%;
     margin-bottom: 50px;
 }
@@ -589,15 +588,12 @@ h6{
 /*------celular------*/
 
 @media screen and (max-width: 580px) {
-    .divmain2, .separador2, .main2, .section2, .efecto4, .divfoo ,.colornegro {
+    .divmain2, .separador2, .main2, .section2, .efecto4, .divfoo ,.colornegro, .section1, .divfechas, .parraf1-celu, .fechas {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .divmain2{
-        
-    }
     
     .linea{
         visibility: hidden;
@@ -618,7 +614,7 @@ h6{
         text-align: center;
         background-color: azure;
         margin: 15px;
-        line-height: 40px;
+        line-height: 30px;
         text-decoration: none;
         color: black;
     
